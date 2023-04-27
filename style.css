@@ -1,0 +1,312 @@
+*{
+	margin: 0; 
+	padding: 0;
+	overflow-x: hidden;
+	box-sizing: border-box; 
+}
+
+html{
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Oxanium', cursive;
+	background: black; 
+	color: white;
+	letter-spacing: -.3px;
+	scroll-behavior: smooth;
+}
+
+.header{
+	width: 1500px;
+	margin: auto;
+}
+
+#main{
+	width: 1000px;
+	margin: auto;
+}
+
+hr{
+	opacity: .8;
+}
+
+ul{
+	justify-content: space-between;
+	font-family: Cormorant Garamond;
+	font-size: 20px;
+}
+
+li{
+	display: inline;
+	float: right;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+li a{
+	font-size: 20px;
+	color: white;
+	padding: 0 50px;
+	text-decoration: none;
+}
+
+.nav-wrapper{
+	left: calc(50% - 750px);
+	position: static;
+}
+
+ul li a:hover{
+  color: #10CDF2;
+}
+
+h4{
+	font-family: Montserrat;
+	font-size: 42px;
+	font-weight: 300;
+}
+
+.popup{
+  width: 850px;
+  height: 500px;
+  background-color: black;
+  text-align: center;
+  box-sizing: border-box;
+  border: #10CDF2 solid 6px;
+  border-radius: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 8;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  display: none;
+  transition: all 0.3s;
+  position: fixed;
+  }
+
+.popup a{
+  color: ;
+  text-decoration: none;
+}
+
+.popup:target{
+  opacity: 1;
+  display: block;
+}
+
+.popup:target + .dim{
+  opacity: 1;
+  z-index: 2;
+}
+
+.dim{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.bt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button{
+	width: 395px;
+	height: 80px;
+	border-radius: 50px;
+	background-color: #10CDF2;
+	font-family: Montserrat;
+	font-size: 24px;
+	color: #88E6F8;
+	border: none;
+}
+
+.arrow-container .arrow1{
+	position: fixed;
+	top: 100px;
+	left: 100px;
+}
+
+.arrow-container .arrow2{
+	position: fixed;
+	top: 700px;
+	left: 290px;
+}
+
+.arrow-container .arrow3{
+	position: fixed;
+	top: 660px;
+	left: 800px;
+}
+
+.arrow-container .arrow4{
+	position: fixed;
+	top: 880px;
+	left: 900px;
+}
+
+.arrow-container .arrow5{
+	position: fixed;
+	top: 700px;
+	left: 840px;
+}
+
+.arrow6{
+	position: fixed;
+	top: 450px;
+	left: 690px;
+}
+
+.tooltip{
+	top: 450px;
+	left: 690px;
+	z-index: 1;
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	position: fixed;
+}
+
+.tooltip .tooltip-content{
+	visibility: hidden;
+	width: 440px;
+	background-color: white;
+	color: black;
+	border-radius: 30px;
+	padding: 20px 35px;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 1.5;
+	opacity: .9;
+	top: 335px;
+	left: 515px;
+}
+
+.tooltip:hover .tooltip-content{
+	visibility: visible;
+	position: fixed;
+}
+
+h1{
+	font-family: Noto Sans KR;
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: 80px;
+}
+
+h2{
+	font-family: Noto Sans KR;
+	font-size: 22px;
+	font-weight: 300;
+	margin-top: 10px;
+	opacity: .7;
+}
+
+.title p{
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: right;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	opacity: .7;
+}
+
+.gallery-container img{
+	margin-right: 30px;
+}
+
+.gallery {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+
+.gallery-container {
+  display: inline-block;
+}
+
+.para p{
+	margin-bottom: 200px;
+	font-family: Noto Sans KR;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 2.2;
+	opacity: .9.5;
+}
+
+.nextpara{
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.nextpara p{
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	opacity: .8;
+}
+
+.nextpara-pic-wrapper{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 37px;
+}
+
+.nextpara-pic-wrapper img:hover{
+	box-shadow: 0 0 10px; 
+	rgba 0, 0, 0, 0.5;
+}
+
+.nextpara-pic-wrapper p{
+	font-size: 22px;
+	font-weight: 300;
+	padding-top: 34px;
+}
+
+/*top, footer*/
+.Top-button{
+	font-family: Noto Sans KR;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 200px;
+	color: white;
+	opacity: 0.9;
+}
+
+.Top-button a{
+	text-decoration-line: none;
+	color: #10CDF2;
+	opacity: 0.9;
+}
+
+.Top-button .material-symbols-outlined{
+	font-size: 40px;
+}
+
+.footer{
+	color: #10CDF2;
+	margin: auto;
+	margin-top: 54px;
+	margin-bottom: 200px;
+	left: calc(50% - 750px);
+}
+
+.foot{
+	font-family: Cormorant Garamond;
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	padding: 50px;
+}
